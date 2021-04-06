@@ -4,11 +4,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
     <title>Weather API</title>
   </head>
   <body>
     <body>
-        <nav class="navbar navbar-dark bg-primary mb-3">
+        <nav class=" navbar-dark bg-primary mb-3">
             <div class="container">
                 <a href="#" class="navbar-brand">Weather</a>
             </div>
@@ -18,7 +21,11 @@
                 <h1>Get The Weather For a Location</h1>
                 <p class="lead">Enter Your Location</p>
                 <input type="text" id="searchUser" class="form-control" placeholder="Location...">
-                <button class="btn btn-primary" id="submit">Submit</button>
+                <br>
+                <div>
+                  <button class="btn btn-primary" id="submit" style="border-radius: 5%;">Submit</button>
+                  <button class="btn btn-primary" id="clear" style="border-radius: 5%;">Clear</button>
+                </div>         
             </div>
             <br>
             <div id="profile"></div>
@@ -30,6 +37,7 @@
         <div id="content">
 
         </div>
+        
         <footer class="mt-5 p-3 text-center bg-light"> &copy; Raftopoulos Emmanouil 2021</footer>
   </body>
   <script src="fetch.js"></script>
