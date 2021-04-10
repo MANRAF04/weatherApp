@@ -70,10 +70,10 @@ class UI {
                 label: 'Temperature',
                 data: [
                   data.list[0].main.temp,
-                  data.list[8].main.temp,
-                  data.list[16].main.temp,
-                  data.list[24].main.temp,
-                  data.list[33].main.temp
+                  data.list[iday2].main.temp,
+                  data.list[iday3].main.temp,
+                  data.list[iday4].main.temp,
+                  data.list[iday5].main.temp
                 ],
                 backgroundColor: '#333333',
                 borderColor: '#333333',
